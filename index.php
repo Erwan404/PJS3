@@ -1,5 +1,5 @@
 <?php 
-	
+	//Hello
 	if ((count($_GET)!=0) && !(isset($_GET['controle']) && isset ($_GET['action'])))
 	require ('./vue/erreur404.tpl'); //cas d'un appel à index.php avec des paramètres incorrects
 	else {
