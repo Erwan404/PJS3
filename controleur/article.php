@@ -18,15 +18,15 @@ function ajout_Article(){
 		else {
 			$ID_Auteur=$_SESSION['profil']['ID_Utilisateur'];
 			$contenu=$_POST['contenu'];
-			$titre=$$_POST['titre'];
+			$titre=$_POST['titre'];
 			if  ((! verif_Contenu($contenu,$err)) || (! verif_Titre($titre,$err))) { 	
 				$msg = (isset($err))?$err:$profil[0];
 				require('vue/article/ajout_article.tpl');
 			}
 			else  { 
-				add_Article($id_nom,$contenu, $titre);
+				add_Article($ID_Auteur,$contenu, $titre);
 				$type="confirmation";
-				$msg = "Article ajouté !";
+				$msg = "Article ajoutÃ©!";
 				$lien = "";
 				$nomlien="";
 				require("./vue/article/message.tpl");
@@ -34,7 +34,7 @@ function ajout_Article(){
 		}
 }
 
-function verifS_contenu($contenu, &$err) {
+function verif_Contenu($contenu, &$err) {
 		if (empty($contenu)) {
 			$err = "La zone de texte est vide.";
 			return false; 
