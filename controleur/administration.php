@@ -5,7 +5,7 @@ include("./controleur/verification.php");
 
 
 function home(){
-	echo "Accueil de l'interface d'administration";
+	include("./vue/administration/page.tpl");
 }
 function logout(){
 		session_unset ();

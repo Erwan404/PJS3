@@ -9,7 +9,7 @@
 	<nav id="menu">  
 	<center>
 			<h1>Page d'accueil du site</h1>
-			<a href="index.php?controle=utilisateur&action=identification">Connexion</a>
+			<a href="index.php?controle=utilisateur&action=identification">Accès admin</a>
 			<!--<a href="index.php?controle=utilisateur&action=inscription">Inscription</a>-->
 </center>
 <nav>

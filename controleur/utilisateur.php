@@ -20,6 +20,7 @@ function identification () {
 		else {
             $pseudo=$_POST['pseudo'];
             $pass=$_POST['pass'];
+			//echo $pass;
 			require ("./modele/administrationBD.php");
 			if  ((! verif_Pseudo($pseudo,$err)) || (!verif_Pass($pass, $pass, $err)) || (! verif_Ident($pseudo,$pass,$profil) )) {
 				$msg = (isset($err))?$err:$profil[0];				
