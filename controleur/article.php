@@ -11,6 +11,7 @@ function ajout_Article(){
 		$profil = array(); 
 		$msg = "";
 		$titre = "";
+		$lien= "";
 		
 		if  (count($_POST)==0){
 			require('vue/article/ajout_article.tpl');
@@ -24,7 +25,8 @@ function ajout_Article(){
 				require('vue/article/ajout_article.tpl');
 			}
 			else  { 
-				add_Article($ID_Auteur,$contenu, $titre);
+				creation_Lien($titre, $lien);
+				add_Article($ID_Auteur,$contenu, $titre, $lien);
 				$type="confirmation";
 				$msg = "Article ajouté!";
 				$lien = "";
@@ -32,6 +34,24 @@ function ajout_Article(){
 				require("./vue/article/message.tpl");
 			}	
 		}
+}
+
+function afficher_Article(){
+	
+}
+
+function modifier_Article(){
+	
+}
+
+function liste_Article(){
+	
+}
+
+function creation_Lien($titre, &$lien){
+	$lien = strtolower($titre); // on passe la chaine de caractère en minuscule
+	$lien = strtr($lien, "àäåâôöîïûüéè", "aaaaooiiuuee"); // on remplace les accents
+	$lien = str_replace(' ', '-', $lien); // on remplace les espaces par des tirets
 }
 
 function verif_Contenu($contenu, &$err) {
