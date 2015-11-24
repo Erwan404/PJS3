@@ -6,6 +6,8 @@ include("./controleur/verification.php");
 
 function home(){
 	include("./vue/administration/page.tpl");
+	require("./controleur/article.php");
+	liste_Articles();
 }
 function logout(){
 		session_unset ();

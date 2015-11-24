@@ -1,7 +1,7 @@
 <?php
-session_start();
+//session_start();
 
-include("./controleur/verification.php");
+//include("./controleur/verification.php");
 
 function ajout_Article(){
 	require("./modele/articleBD.php");
@@ -37,15 +37,25 @@ function ajout_Article(){
 }
 
 function afficher_Article(){
-	
+	require("./modele/articleBD.php");
+	$lien=$_GET['lien'];
+	echo $lien."   "; //Porblème avec le lien
+	$article=get_Article($lien);
+	echo $article['Titre'];
+	echo $article['Contenu'];
 }
 
 function modifier_Article(){
 	
 }
 
-function liste_Article(){
-	
+function liste_Articles(){
+	require("./modele/articleBD.php");
+	$articles=get_Articles();
+	foreach($articles as $art)
+	{
+		echo "<a href='index.php?controle=article&action=afficher_Article&lien=".$art['Nom_Lien']."'>".$art['Titre']."</a><br/>";
+	}
 }
 
 function creation_Lien($titre, &$lien){
