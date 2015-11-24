@@ -5,8 +5,4 @@ header("Status: 200 Ok",false,200);
 
 include('page.php');
 }
-else
-{
-require('vue/erreur404.tpl');
-}
 ?>
