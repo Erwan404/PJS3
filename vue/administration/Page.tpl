@@ -6,12 +6,13 @@
 		<title>Page d'administration</title>
 	</head>
 	<body>
-	<nav id="menu">  
-	<center>
-			<h1>Bienvenue dans la page d'administration du site</h1>
-			<a href="index.php?controle=article&action=ajout_Article">Ajouter un article</a>
-			<a href="index.php?controle=administration&action=logout">Déconnexion</a>
-	</center>
-	<nav>
+	<header class = top-header>
+		<nav id="menu">  
+		<center>
+				<h1>Bienvenue dans la page d'administration du site</h1>
+				<a href="index.php?controle=article&action=ajout_Article">Ajouter un article</a>
+				<a href="index.php?controle=administration&action=logout">Déconnexion</a>
+		</center>
+		<nav>
 	</header>
 	</body></html>
