@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // chez vous, par exemple
 
