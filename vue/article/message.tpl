@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>SocDUT</title>
-		<script src="./javascript/jquery.js"></script>
+		<meta charset="utf-8">
+		<title>Message</title>
 	</head>
 	<body>
 		<article id="message">
