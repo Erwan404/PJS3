@@ -28,14 +28,16 @@ function get_Articles(){
 
 function get_Article($lien){
 	require ("./modele/configSQL.php") ; 
-		$article = array();
-		$req= "SELECT * FROM articles WHERE Nom_Lien='%s';";
+		$req= "SELECT *  FROM articles WHERE Nom_Lien='%s';";
 		$sql = sprintf ($req, $lien);
 		$res = mysqli_query($link,$sql)
-			or die ('Erreur de requete : '. $sql);
-		while($rows=mysqli_fetch_assoc($res)){	
-			$article[]=$rows;
+			or die ('Erreur de requete : ' . $sql);
+		if (mysqli_num_rows($res)>0) {
+			$article=mysqli_fetch_assoc($res);
+			return $article;
 		}	
-		return $article;
-	}
+		else {
+			return false;
+		}
+}		
 ?>
