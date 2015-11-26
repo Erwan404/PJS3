@@ -57,13 +57,13 @@ function liste_Articles(){
 }
 
 function creation_Lien($titre, &$lien){
-	//$charset='utf-8';
-	//$lien = htmlentities($lien, ENT_NOQUOTES, $charset);
-	$lien = strtolower($titre); // on passe la chaine de caractère en minuscule
-	$lien = strtr($lien, 'áàâäãåçéèêëíìîïñóòôöõúùûüýÿ', 'aaaaaaceeeeiiiinooooouuuuyy');
-    //$lien = preg_replace('#&[^;]+;#', '', $lien); // supprime les autres caractères
-	//$lien = str_replace(' ', '-', $lien); // on remplace les espaces par des tirets
-	echo $lien;
+	$lien=$titre;
+	$lien=str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+                            explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+                            $lien);
+	$lien = strtolower($lien); // on passe la chaine de caractère en minuscule
+    $lien = preg_replace('#&[^;]+;#', '', $lien); // supprime les autres caractères
+	$lien = str_replace(' ', '-', $lien); // on remplace les espaces par des tirets
 }
 
 function verif_Contenu($contenu, &$err) {
