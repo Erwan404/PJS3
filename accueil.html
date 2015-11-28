@@ -3,27 +3,48 @@
    <head>
       <link rel="shortcut icon" href="./images/favicon.png" >
       <title> Ile De France </title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
-      <meta name="HandheldFriendly" content="true" />
-      <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
-      <!-- end mobile specific info -->
-      <link rel="stylesheet" type="text/css" href="./styleCSS/style1.css" media="only screen and (min-width: 1200px)" />
-      <link rel="stylesheet" type="text/css" href="./styleCSS/styleh.css" media="only screen and (max-width: 1200px)" />
+      <title>Bootstrap template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
    </head>
    <div id="globale">
       <header>
          <div id="logo">
             <img src="./images/logo.png" alt="logo">
          </div>
-         <div style="clear:both"></div>
-         <div id="all-accueil">
-            <nav class="Barre-menu">
+         <div id="navbar-header">
+            <nav class="navbar">
                <ul id="menu">
-                  <li class="active"><a href="accueil.html">Accueil</a> </li>
-                  <li><a href="professionnel.html">Professionnel</a></li>
-                  <li><a href="region.html">Région</a></li>
-                  <li><a href="tourisme.html">Tourisme</a></li>
+                  <li class="active"><a href="./accueil.html">Accueil</a></li>
+                  <li><a href="professionnel.html">Professionnel</a>
+					<ul>
+							<li><a href="./infrastructureP.html">Infrastructure</a></li>
+							<li><a href="./education.html">Education</a></li>
+					</ul>
+				  </li>
+                  <li><a href="./region.html">Région</a>
+					<ul>
+							<li><a href="./blog.html">Blog</a></li>
+							<li><a href="./conseilregion.html">Conseil régional</a></li>
+							<li><a href="./magazine.html">Magazine</a></li>
+							<li><a href="./produits.html">Produits</a></li>
+							<li><a href="./culture.html">Culture</a></li>
+					</ul>
+				  </li>
+                  <li><a href="./tourisme.html">Tourisme</a>
+					<ul>
+							<li><a href="./lieuxactivités.html">Lieux et activités</a></li>
+							<li><a href="./infrastructure.html">Infrastructure</a></li>
+					</ul>
+				  </li>
                </ul>
             </nav>
          </div>
