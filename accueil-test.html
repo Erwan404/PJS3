@@ -7,6 +7,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="./StyleCSS.css" rel="stylesheet">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -22,9 +23,16 @@
                <nav class="navbar navbar-inverse">
 			   <div class="container-fluid">
                   <div class="navbar-header">
-                     <a class="navbar-brand" href="./zccueil.html">Ile-De-France</a>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+                     <a class="navbar-brand" href="./accueil.html">
+					 <img style="max-width:100px;" src="./images/logo.png"></a>
                   </div>
-                  <ul class="nav navbar-nav">
+				  <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
                      <li class="active"><a href="./accueil.html">Accueil</a></li>
                      <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="./professionel.html">Professionel<b class="caret"></b></a>
@@ -52,13 +60,14 @@
                            <li><a href="./infrastructure.html">Infrastructure</a></li>
                         </ul>
                      </li>
-                  </ul>
-				   <form class="navbar-form navbar-right inline-form">
+					 <form class="navbar-form navbar-right inline-form">
             <div class="form-group">
               <input type="search" class="input-sm form-control" placeholder="Recherche">
               <button type="submit" class="btn btn-inverse"><span class="icon icon-search"></span> Chercher</button>
             </div>
           </form>
+                  </ul>
+			</div>	  
 		  </div>
                </nav>
             </div>
@@ -74,7 +83,7 @@
          </div>
          <section class="row">
             <div class="col-lg-12">
-               <p><img class="Image-center" src="./images/visuel_home.png" alt="Carte" width="300" height="199"></p>
+               <p><img class="img-responsive center-block" src="./images/visuel_home.png" alt="Carte" width="300" height="199"></p>
                <p>L’Île de France est une région qui s’est construite autour de la capitale de la France, Paris et qui regroupe 8 départements : Paris (75), Seine et Marne (77), Yvelines (78), Essonne (91), Hauts de Seine (92), Seine Saint Denis (93), Val de Marne (94), et Val d’Oise (95).</p>
                <p>Île qu’elle n’a jamais été, la région doit son nom aux rivières et fleuves qui la traversent, lui assurant richesse et abondance depuis la nuit des temps… Les hommes ne s’y sont pas trompés en s’y installant, la transformant en 2.000 ans la troisième région économique du monde après New York et Tokyo.</p>
                <p>Abritant la capitale, l’Île de France constitue le cœur historique du pays et brille tout autant dans les domaines historique, économique, politique et culturel d’exception, l’Île de France est la première destination touristique mondiale. Les huit départements de la région présentent une offre touristique très diverse et Paris, à elle seule, capitalise une très forte notoriété.</p>
