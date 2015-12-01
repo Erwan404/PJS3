@@ -1,0 +1,8 @@
+body { 
+background: #CECECE !important;
+}
+
+.inline-form input {
+  display: inline-block;
+  width: 150px;
+}
