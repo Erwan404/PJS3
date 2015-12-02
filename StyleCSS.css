@@ -72,3 +72,36 @@ body {
 .form-control {
     border: 1px solid #333;
 }
+
+.top-footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    float: left;
+    max-width: 100%;
+    background-color: #1c1c1c;
+}
+
+.top-footer h3 {
+    color:white;
+}
+.bottom-footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+    float: left;
+    max-width: 100%;
+    background-color: #2a2a2a;
+}
+
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
