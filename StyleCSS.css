@@ -81,3 +81,27 @@ footer a:hover {
     display: block;
   }
 }
+
+.map{
+	width:300px;
+	height:199px;
+	background:url(./images/map/visuel_homelarge2.png) left top no-repeat;
+	position:relative;
+}
+
+.map .overlay{
+	width:300px;
+	height:199px;
+	background:url(./images/map/visuel_homelarge2.png) 300px top no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.map img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}
