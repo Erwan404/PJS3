@@ -79,7 +79,6 @@ footer a:hover {
 @media (min-width: 765px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
-  }
 }
 
 .map{
