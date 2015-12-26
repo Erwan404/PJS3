@@ -47,6 +47,11 @@
     color:white;
 	margin: 26px 0;
 }
+
+.articlesR ul li {
+	padding: 10px 0;
+	border-bottom: 1px solid #c5c5c5;
+}
 .bottom-footer {
     width: 100%;
     height: auto;
