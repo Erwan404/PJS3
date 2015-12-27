@@ -1,10 +1,20 @@
-.breadcrumb {
+.banniere {
 	background:url(./images/breadcrumb.png) 7px -82px repeat; 
-	border: 0px solid rgba(245, 245, 245, 1); 
-	border-radius: 0px; 
-	display: block;
-	text-align: center;  
+	color:white;
+	text-align: center;
 	font-weight: bold;
+	padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.banniere h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    padding-top: 20px;
+	font-size: 30px;
+}
+.breadcrumb {
+	background:none;
 }
 .breadcrumb li {
 	font-size: 17px; 
