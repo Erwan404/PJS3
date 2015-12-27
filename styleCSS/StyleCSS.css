@@ -1,5 +1,5 @@
 .banniere {
-	background:url(./images/breadcrumb.png) 7px -82px repeat; 
+	background:url(../images/breadcrumb.png) 7px -82px repeat; 
 	color:white;
 	text-align: center;
 	font-weight: bold;
@@ -100,14 +100,14 @@ footer a:hover {
 .map{
 	width:300px;
 	height:199px;
-	background:url(./images/map/visuel_homelarge2.png) left top no-repeat;
+	background:url(../images/map/visuel_homelarge2.png) left top no-repeat;
 	position:relative;
 }
 
 .map .overlay{
 	width:300px;
 	height:199px;
-	background:url(./images/map/visuel_homelarge2.png) 300px top no-repeat;
+	background:url(../images/map/visuel_homelarge2.png) 300px top no-repeat;
 	position:absolute;
 	top:0;
 	left:0;
