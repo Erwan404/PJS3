@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<link rel="shortcut icon" href="./images/favicon.png" >
-		<title> Ile De France </title>
+		<title> Les débuts du blog de l'Ile-de-France | Ile De France </title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="./styleCSS/StyleCSS.css" rel="stylesheet">
+		<link href="./datepicker/css/datepicker.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -17,7 +18,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<nav class="navbar navbar-inverse navbar-static-top">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,7 +30,7 @@
 						<img style="max-width:130px;" src="./images/logo.png" alt="logo"></a>
 					</div>
 					<div class="collapse navbar-collapse">
-						<form class="navbar-form navbar-right" role="form">
+						<form class="navbar-form navbar-right">
 							<div class="input-group">
 								<span class="input-group-btn">
 									<input type="text" style="width:150px" class="input-sm form-control" placeholder="Recherche">
@@ -70,9 +71,9 @@
 				</div>
 			</nav>
 		</header>
-		<div>
+		<div class="banniere">
+				<h3>Les débuts du blog de l'Ile-de-France</h3>
 			<ol class="breadcrumb">
-				<h3>Région</h3>
 				<li><a href="./accueil.html">Home</a></li>
 				<li><a href="./region.html">Région</a></li>
 				<li><a href="./blog.html">Blog</a></li>
@@ -92,24 +93,61 @@
 			</section>
 		</div>
 			<footer>
-			
-				<div class="top-footer">
+			<div class="top-footer">
 				<div class="container">
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
 					<div class="col-md-3">
-					<h5>SOCIAL</h5>
+						<h5>MÉTA</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="http://getbootstrap.com/" target="_blank">Site de Bootstrap</a>
+							</li>
+							<li>
+								<a href="https://github.com/Erwan404/PJS3" target="_blank">GitHub</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 articlesR">
+						<h5>ARTICLES RÉCENTS</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="./loifynael.html">L’impact de la loi Fynael</a>
+							</li>
+							<li>
+								<a href="./visitepape.html">La visite du Pape à Notre-Dame</a>
+							</li>
+							<li>
+								<a href="./debutIDF.html">Le début du blog de l’Ile de France</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>CALENDRIER</h5>
+						<div id='sandbox-container'></div>
+					</div>
+					<div class="col-md-3">
+						<h5>SOCIAL</h5>
 						<p><a href="https://www.facebook.com/RegionIledeFrance" class="iconefb" target="_blank"><img src="./images/fb-icon.png" alt="LogoFB"> /RegionIledeFrance</a></p>
 						<p><a href="http://twitter.com/iledefrance" class="icontw" target="_blank"><img src="./images/t-icon.png" alt="LogoTW"> @iledefrance</a></p>
 					</div>
 				</div>
-				</div>
-				<div class="bottom-footer">
+			</div>
+			<div class="bottom-footer">
 				<div class="container">
 					<p>Projet PJS3 DUT 2ème année 2015-2016 <a target="_blank" href="http://www.iut.parisdescartes.fr/">Paris Descartes</a></p>
 					<script src="./bootstrap/js/jquery.js"></script>
 					<script src="./bootstrap/js/bootstrap.min.js"></script>
+					<script src="./datepicker/js/bootstrap-datepicker.js"></script>
+					<script type="text/javascript">
+						$(function(){
+							$('#sandbox-container').datepicker({
+								startDate: "now",
+								changeMonth: false,
+								changeYear: false,
+								todayHighlight: true
+							});
+						});
+					</script>
 				</div>
 			</div>
 			</footer>

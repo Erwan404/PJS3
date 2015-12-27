@@ -1,0 +1,122 @@
+.banniere {
+	background:url(../images/breadcrumb.png) 7px -82px repeat; 
+	color:white;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.banniere h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    padding-top: 20px;
+	font-size: 30px;
+}
+.breadcrumb {
+	background:none;
+}
+.breadcrumb li {
+	font-size: 17px; 
+}
+.breadcrumb a {
+	color: rgba(255, 255, 255, 1); 
+}
+
+.breadcrumb>li+li:before {
+	color: rgba(204, 204, 204, 1);
+	content: "\002F\00a0";
+}
+.breadcrumb h3 {
+    color: #FFF;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.navbar-form .input-group .form-control, .navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn {
+    width: auto;
+    background-color: #333;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
+    background:none;
+	color:gray;
+}
+
+.top-footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    float: left;
+    max-width: 100%;
+    background-color: #1c1c1c;
+}
+
+.top-footer h5 {
+    color:white;
+	margin: 26px 0;
+}
+
+.articlesR ul li {
+	padding: 10px 0;
+	border-bottom: 1px solid #c5c5c5;
+}
+.bottom-footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px 0;
+    float: left;
+    max-width: 100%;
+    background-color: #2a2a2a;
+}
+
+.bottom-footer p{
+	color: #B3B3B4;
+	margin: 0 0 0px;
+}
+
+.navbar{
+	border-top: 1px solid #FF0000;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary a{
+	color: white;
+    text-decoration: none;
+}
+
+/*Permet de faire le hover sur le dropdown
+	@media (min-width: 765px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}*/ 
+
+.map{
+	width:300px;
+	height:199px;
+	background:url(../images/map/visuel_homelarge2.png) left top no-repeat;
+	position:relative;
+}
+
+.map .overlay{
+	width:300px;
+	height:199px;
+	background:url(../images/map/visuel_homelarge2.png) 300px top no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.map img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}

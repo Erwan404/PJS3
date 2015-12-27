@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<link rel="shortcut icon" href="./images/favicon.png" >
-		<title> Ile De France </title>
+		<title> Produits | Ile De France </title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
 		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="./styleCSS/StyleCSS.css" rel="stylesheet">
+		<link href="./datepicker/css/datepicker.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -18,7 +19,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<nav class="navbar navbar-inverse navbar-static-top">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,7 +31,7 @@
 						<img style="max-width:130px;" src="./images/logo.png" alt="logo"></a>
 					</div>
 					<div class="collapse navbar-collapse">
-						<form class="navbar-form navbar-right" role="form">
+						<form class="navbar-form navbar-right">
 							<div class="input-group">
 								<span class="input-group-btn">
 									<input type="text" style="width:150px" class="input-sm form-control" placeholder="Recherche">
@@ -54,7 +55,7 @@
 									<li><a href="./blog.html">Blog</a></li>
 									<li><a href="./conseilregion.html">Conseil régional</a></li>
 									<li><a href="./magazine.html">Magazine</a></li>
-									<li><a href="./produits.html">Produits</a></li>
+								<li class="active"><a href="./produits.html">Produits</a></li>
 									<li><a href="./culture.html">Culture</a></li>
 								</ul>
 							</li>
@@ -71,9 +72,9 @@
 				</div>
 			</nav>
 		</header>
-		<div>
+		<div class="banniere">
+		<h3>Produits</h3>
 			<ol class="breadcrumb">
-				<h3>Accueil</h3>
 				<li><a href="./accueil.html">Home</a></li>
 				<li><a href ="./region.html">Région</a></li>
 				<li class="active">Produits</li>
@@ -83,7 +84,6 @@
 			<section class="row">
 				<div class="col-lg-12">
 					<h3>Produits</h3>
-					<div class="content">
 						<h2>Un poumon économique</h2>
 						<h4>Premier service</h4>
 						<p>Métropole culturelle et intellectuelle, laboratoire scientifique et urbain, l’Île-de-France est aussi le poumon économique du pays, réalisant à elle seule 28% du produit intérieur brut national. Le fait d’être la région-capitale se traduit logiquement par la puissance du secteur des services. 82% des actifs franciliens travaillent dans le secteur tertiaire, dans l’administration, la banque, le tourisme, les aides à la personne ou le commerce.</p>
@@ -106,7 +106,6 @@
 						Autre illustration de cette capacité régionale en matière d’innovation : en 2011, 4.615 demandes de brevets ont été publiées en Île-de-France, sur les 14.547 enregistrées par l’Institut national de la propriété industriel dans tout le pays. Un bémol toutefois : ce résultat repose avant tout sur la mobilisation de grandes structures publiques ou privées, comme PSA Peugeot Citroën, le Commissariat à l’énergie atomique et aux énergies alternatives, l’Oréal, ou encore le CNRS.</p>
 						<h2>Une métropole toujours plus créative</h2>
 						<p>Puisant sa force dans son histoire et dans son rayonnement culturel, l’Île-de-France compte plus de 365.000 personnes employées dans les industries de la création qui regroupe aussi bien la mode que le numérique, l’architecture que le cinéma, le design que le jeu vidéo, l’artisanat d’art que la publicité. Comme d’autres clusters mondiaux – Londres, New York, Tokyo, Los Angeles –, l’Île-de-France mise sur ces secteurs stratégiques fondés sur le savoir et la connaissance, faisant appel à une main-d’œuvre hautement qualifiée.</p>
-					</div>
 					<hr class="separator">
 				</div>
 			</section>
@@ -115,9 +114,36 @@
 			
 			<div class="top-footer">
 				<div class="container">
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
+					<div class="col-md-3">
+						<h5>MÉTA</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="http://getbootstrap.com/" target="_blank">Site de Bootstrap</a>
+							</li>
+							<li>
+								<a href="https://github.com/Erwan404/PJS3" target="_blank">GitHub</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 articlesR">
+						<h5>ARTICLES RÉCENTS</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="./loifynael.html">L’impact de la loi Fynael</a>
+							</li>
+							<li>
+								<a href="./visitepape.html">La visite du Pape à Notre-Dame</a>
+							</li>
+							<li>
+								<a href="./debutIDF.html">Le début du blog de l’Ile de France</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>CALENDRIER</h5>
+						<div id='sandbox-container'></div>
+					</div>
 					<div class="col-md-3">
 						<h5>SOCIAL</h5>
 						<p><a href="https://www.facebook.com/RegionIledeFrance" class="iconefb" target="_blank"><img src="./images/fb-icon.png" alt="LogoFB"> /RegionIledeFrance</a></p>
@@ -130,6 +156,17 @@
 					<p>Projet PJS3 DUT 2ème année 2015-2016 <a target="_blank" href="http://www.iut.parisdescartes.fr/">Paris Descartes</a></p>
 					<script src="./bootstrap/js/jquery.js"></script>
 					<script src="./bootstrap/js/bootstrap.min.js"></script>
+					<script src="./datepicker/js/bootstrap-datepicker.js"></script>
+					<script type="text/javascript">
+						$(function(){
+							$('#sandbox-container').datepicker({
+								startDate: "now",
+								changeMonth: false,
+								changeYear: false,
+								todayHighlight: true
+							});
+						});
+					</script>
 				</div>
 			</div>
 		</footer>
